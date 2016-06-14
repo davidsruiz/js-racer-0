@@ -1,0 +1,74 @@
+* {}
+
+div {
+  display: inline-block;
+  position: relative;
+}
+
+#board {
+  padding: 16px;
+  background-color: #ECEFF1;
+}
+
+.lane {
+  position: relative;
+  width: 100%;
+  height: 32px;
+  float: left;
+  margin: 8px 0px;
+}
+
+.lane > div {
+  height: 100%;
+}
+
+.ghost_box {
+  position: absolute;
+  right: 0px;
+
+  width: 32px;
+  background-color: #CFD8DC;
+  z-index: 1;
+}
+
+.player_box {
+  width: 32px;
+  height: 100%;
+  z-index: 2;
+}
+
+.progress_box {
+  width: 0px;
+  height: 100%;
+  z-index: 1;
+
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.0, 0.0, 0.2, 1);
+}
+
+.lane > .player_box { background-color: #90A4AE; }
+.lane > .progress_box { background-color: #B0BEC5; }
+
+.red > .player_box { background-color: #F44336; }
+.red > .progress_box { background-color: #FFCDD2; }
+
+.blue > .player_box { background-color: #42A5F5; }
+.blue > .progress_box { background-color: #BBDEFB; }
+
+.green > .player_box { background-color: #8BC34A; }
+.green > .progress_box { background-color: #DCEDC8; }
+
+.purple > .player_box { background-color: #9C27B0; }
+.purple > .progress_box { background-color: #E1BEE7; }
+
+.yellow > .player_box { background-color: #FFC107; }
+.yellow > .progress_box { background-color: #FFECB3; }
+
+.pink > .player_box { background-color: #EC407A; }
+.pink > .progress_box { background-color: #F8BBD0; }
+
+.cyan > .player_box { background-color: #26C6DA; }
+.cyan > .progress_box { background-color: #B2EBF2; }
+
+.gray > .player_box { background-color: #78909C; }
+.gray > .progress_box { background-color: #CFD8DC; }
